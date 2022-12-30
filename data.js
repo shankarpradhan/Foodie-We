@@ -124,7 +124,7 @@ var counter = 10;
 var myFunction = function() {
 
         let dat=new Date().toTimeString()
-        if(dat.substring(0,5)=="14:10"){
+        if(dat.substring(0,5)=="18:30"){
     
     
     console.log(dat.substring(6,8));
