@@ -25,8 +25,6 @@ const UserSchema = mongoose.Schema({
         required: true
     }
 
-  
-
 })
 const User=mongoose.model("lol",UserSchema);
 const shit=async(name,fname,email,date,person)=>{
@@ -35,12 +33,13 @@ const shit=async(name,fname,email,date,person)=>{
 const user = new User({name:name,fname:fname,email:email,date:date})
 const ans=await user.save()
 console.log(ans);
-
-
 }
 const getu=async()=>{
-    let da=new Date().toISOString().substring(5,10)
-    
+    //let da=new Date().toISOString().substring(5,10)
+    let da=new Date();
+    da.setDate(da.getDate()+1);
+    da=da.toISOString().substring(5,10);
+
 
     const info=await User.find(  {date:{$regex:new RegExp('.....'+da) }})
     
@@ -49,7 +48,12 @@ const getu=async()=>{
 
 
 async function damn(){
-    let da=new Date().toISOString().substring(5,10)
+    // let da=new Date().toISOString().substring(5,10)
+
+    let da=new Date();
+    da.setDate(da.getDate()+1);
+    da=da.toISOString().substring(5,10);
+
     
     //  let res = await fetch(`http://localhost:8000/getinfo`);
     let res=await getu();
@@ -120,7 +124,7 @@ var counter = 10;
 var myFunction = function() {
 
         let dat=new Date().toTimeString()
-        if(dat.substring(0,5)=="00:00"){
+        if(dat.substring(0,5)=="14:10"){
     
     
     console.log(dat.substring(6,8));
@@ -134,7 +138,7 @@ var myFunction = function() {
         }
            else if(dat.substring(6,8)=="00"){counter=60000;}
   
-    
+    console.log(dat);
     setTimeout(myFunction, counter);
 }
 setTimeout(myFunction,counter);
