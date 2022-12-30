@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    
+<div id="maind">
+
+    
+
+<div id="secd">
+
+
+    <div id="cake"></div>
+<form id="form" action="https://birthdaywisher.onrender.com/ducky" method="post" >
+
+
+<input type="text" id="name" name="name" placeholder="Name">
+<input type="text" id="fname" name="fname" placeholder="Friend Name">
+<input type="text" id="email" name="email" placeholder="Friend Email Id">
+<input type="text" id="date" name="date" placeholder="Birthday Date" onblur="(this.type='text')" onfocus="(this.type='date')">
+<p id="btn" style="text-align: center;line-height: 35px;">Go</p>
+
+</form>
+
+
+</div>
+</div>
+<script>
+
+
+
+
+document.getElementById("btn").addEventListener("click",()=>{
+
+document.getElementById("form").submit();
+    
+})
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

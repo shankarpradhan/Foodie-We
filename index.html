@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <div class="coint">
+     <div class="heading">
+        <h1>Birthday Wisher</h1>
+        
+     </div>
+
+
+     <div class="typei">
+        <p class="typep"></p>
+        
+        </div>
+     <div class="cake-coint">
+        <p class="cake">🎂</p>
+        
+     </div>
+
+
+
+    </div>
+    <div class="coint" id="damn">
+
+       <div>
+
+
+
+        <p>you want to wish your friend in time</p>
+        <p>you are a late wisher</p>
+        <p>you don't want to wish your friend late</p>
+        <p>you don't have time to wish</p>
+        <p>you are a early sleeper</p>
+
+       </div> 
+
+
+
+       <div class="wishcoint">
+<p  id="str">🍓</p>
+        <button id="wishbtn">Wish</button>
+       </div>
+    </div>
+</body>
+<script>
+    
+var i=0;
+var s="don't want to forget your friends Birthday";
+setInterval(()=>{
+
+if(i==42){
+    
+for(let e=0;e<1000;e++){
+    for(let d=0;d<200;d++){
+        for(let f=0;f<300;f++){
+
+
+if(e==999){i=0;
+    document.getElementsByClassName("typep")[0].innerHTML=" ";
+    console.log("damn")}
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+    
+}
+else{
+    document.getElementsByClassName("typep")[0].innerHTML=s.substring(0,i); 
+ 
+document.getElementsByClassName("typep")[0].innerHTML+=s[i]+'|';
+if(i==41){
+document.getElementsByClassName("typep")[0].innerHTML=s.substring(0,42); }
+
+i++;}
+
+
+
+
+},100);
+
+
+document.getElementById("wishbtn").addEventListener("click",()=>{
+
+
+
+window.location.href="/form.html";
+
+})
+
+</script>
+    
+</html>

@@ -1,0 +1,181 @@
+*{margin: 0;padding: 0;}
+body{
+    background-color: green;
+}
+body > div{
+
+    height:500px;
+    background-color: #F5E6CC;
+    width: 100%;
+
+}
+.heading{
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    
+    }
+.coint h1{
+
+
+    color: #303C6C;
+
+    padding-top:10px ;
+    font-size: 7.5vh;
+    text-shadow: 0 5px 6px blueviolet;
+    animation: headscale;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    text-align: center;
+}
+@keyframes headscale{
+    0%,50% {
+        transform: scale(1.2); 
+        
+    }
+    
+    51%,100% {
+        transform:scale(1)
+    }}
+
+    .typei{
+
+        width: 400px;
+        margin: 70px  auto 0;
+        
+    }
+    .typep{
+        font-size: 3vh;
+    text-align: center;
+    height: 30px;
+    }
+    .cake-coint{
+padding-top: 25px;
+        margin: 30px auto ;
+        width: 200px;
+    text-align: center;
+    
+    
+    
+    
+    }    
+    .cake{
+
+        font-size: 16vh;
+        animation: cake 3s linear infinite;
+    }
+    #damn{
+
+        background-color: #F4976C;
+
+    }
+  
+    @keyframes cake{
+        0%,50% {
+            transform: scale(1.07); 
+            
+        }
+        
+        51%,100% {
+            transform:scale(1)
+        }}
+        #damn > div{
+
+            padding-top: 40px;
+            margin: 0 auto;
+            width: 400px;
+            font-size: 2.5vh;
+            line-height: 1.6;
+            }
+            #damn p{
+            
+            
+              color: #F3E0DC;  
+            }        
+.wishcoint{
+    width: 20px;
+    margin: 100px auto;
+    text-align: center;
+    
+    
+    
+}
+#wishbtn{
+
+font-size: 2vh;
+border-top-left-radius: 13px;
+border-top-right-radius: 13px;
+border-bottom-left-radius: 3px;
+border-bottom-right-radius: 3px;
+
+padding:10px 25px ;
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+background-image:url("cake.png");
+background-size: cover;
+border-color: #DEB887;
+color: rgb(60,19,33);
+
+}
+
+
+#str{
+
+    margin-top: 40px;
+    margin-bottom: -5px;
+    animation-name: strf;
+    animation-duration: 6s;
+    position: relative;
+    animation-iteration-count: infinite;
+    /* animation-delay: 5s; */
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    
+
+}
+
+
+@keyframes strf{
+
+0%{bottom: 5px;rotate: 360deg;}
+100%{bottom: 0;}
+
+
+}
+
+@media(max-width: 525px) {
+    .heading{
+
+        width: 80%;
+    }
+    .coint h1{
+
+
+        font-size: 4.4vh;
+    }
+    .cake{
+
+        font-size: 14vh;
+    }
+    
+
+
+    .typei{
+
+        width: 80%;
+    
+        
+    }
+    .typep{
+    
+        font-size: 2.5vh;
+    
+    }
+
+    #damn > div{
+
+        width: 80%;
+    }
+
+
+}

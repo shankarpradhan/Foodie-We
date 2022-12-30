@@ -1,0 +1,87 @@
+
+*{
+
+    margin: 0;
+    padding: 0;
+}
+
+#maind{
+    height: 770px;
+background-color: #F5E6CC;
+
+}
+
+form{
+width: 216.4px;
+margin:0 auto ;
+/* text-align: center; */
+ background-color:chocolate;
+padding-bottom: 2px;
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+form input,#btn{
+margin-bottom: 2px;
+display: block;
+width: 212.4px;
+height:40px;
+font-size: 2vh;
+border-radius: 10px;
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+#secd{
+
+    /* padding-top:250px ; */
+    margin: 0 auto;
+    width: 216px;
+    padding-top: 60px;
+}
+#btn,#date{
+
+
+    display: block;
+    
+    
+    
+}
+#btn{
+    background-color: #552619;
+    color: #B2456E;
+    border-radius: 20px;
+    width: 50px;
+    display: inline;
+    position: absolute;
+    animation: move 10s infinite;
+
+}
+
+#cake{
+
+
+    background-image: url("lol.gif");
+    height: 250px;
+    width: 216.4px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#date{
+
+    width: 163px;
+    display: inline
+    
+    
+}
+
+@keyframes move {
+    
+0%{
+
+   background-color:#8B4513;
+   color: #CD853F;
+   text-transform: none;
+}
+
+}
